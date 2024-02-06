@@ -1,0 +1,12 @@
+browser: :chrome
+url: 'https://automationteststore.com/'
+
+
+browser_arguments:
+  :chrome:
+    - no-sandbox
+    - disable-dev-shm-usage
+    - ignore-certificate-errors
+  :firefox:
+    - acceptInsecureCerts
+    - no-sandbox
