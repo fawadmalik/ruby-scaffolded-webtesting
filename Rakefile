@@ -16,3 +16,11 @@ end
 Rake::TestTask.new(:minitest_experiments) do |expTask|
   expTask.pattern = 'spec/string_combiner_spec.rb'
 end
+
+Rake::TestTask.new(:runAll) do |allTask|
+  allTask.libs << 'spec'
+  allTask.pattern = 'spec/**/*_spec.rb'
+  allTask.verbose = true
+  allTask.warning = true
+end
+
