@@ -59,7 +59,7 @@ class TestStringCombiner < Minitest::Test
     string2 = nil
     string_combiner = StringCombiner.new(string1, string2)
     # fire
-    assert_equal nil, string_combiner.combine
+    assert_nil string_combiner.combine
   end
   def test_combines_two_strings_general_case
     string1 = ('a'..'z').to_a.sample(rand(100)).join
