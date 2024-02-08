@@ -12,3 +12,7 @@ end
 Rake::TestTask.new(:login_page) do |task|
   task.pattern = 'spec/login_page_spec.rb'
 end
+
+Rake::TestTask.new(:minitest_experiments) do |expTask|
+  expTask.pattern = 'spec/string_combiner_spec.rb'
+end
