@@ -129,3 +129,11 @@ Options :
   -i, [--input = INPUT] # It uses a file as input to create the steps
 
 ```
+
+To run just one test
+
+```bash
+
+bundle exec ruby spec/string_combiner_spec.rb --name test_combines_two_strings_first_string_shorter_than_second
+
+```
