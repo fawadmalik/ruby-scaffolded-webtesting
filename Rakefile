@@ -24,3 +24,10 @@ Rake::TestTask.new(:runAll) do |allTask|
   allTask.warning = true
 end
 
+desc "Run all the test in your test folder"
+task :runAllAlt do
+  Dir.glob("spec/**/*_spec.rb").each do |file|
+    load file
+  end
+end
+task default: :runAllAlt
